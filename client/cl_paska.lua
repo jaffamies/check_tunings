@@ -55,12 +55,12 @@ local dist = GetDistanceBetweenCoords(pos.x, pos.y, pos.z, -199.19, -1381.24, 31
 	vehProps.modSuspension = vehProps.modSuspension + 1
 	vehProps.modTransmission = vehProps.modTransmission + 1
 	
-	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Ajoneuvon malli: ' ..modelName })
-	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Jarrujen taso: ' .. tostring(vehProps.modBrakes).. '/' .. GetNumVehicleMods(vehicle, 12) })
-	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Moottorin taso: ' .. tostring(vehProps.modEngine).. '/' .. GetNumVehicleMods(vehicle,11) })
-	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Armorin taso: ' .. tostring(vehProps.modArmor).. '/' .. GetNumVehicleMods(vehicle, 16) })
-	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Jousituksen taso: ' .. tostring(vehProps.modSuspension).. '/' .. GetNumVehicleMods(vehicle,15)})
-	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Vaihteiston taso: ' .. tostring(vehProps.modTransmission).. '/' .. GetNumVehicleMods(vehicle,13)})
+	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Car model: ' ..modelName })
+	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Brakes level: ' .. tostring(vehProps.modBrakes).. '/' .. GetNumVehicleMods(vehicle, 12) })
+	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Engine level: ' .. tostring(vehProps.modEngine).. '/' .. GetNumVehicleMods(vehicle,11) })
+	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Armor level: ' .. tostring(vehProps.modArmor).. '/' .. GetNumVehicleMods(vehicle, 16) })
+	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Suspension level: ' .. tostring(vehProps.modSuspension).. '/' .. GetNumVehicleMods(vehicle,15)})
+	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Transmission level: ' .. tostring(vehProps.modTransmission).. '/' .. GetNumVehicleMods(vehicle,13)})
 	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Turbo: ' .. tostring(vehProps.modTurbo)})
 
 				end
@@ -85,12 +85,12 @@ local ped = GetPlayerPed(-1)
 	vehProps.modSuspension = vehProps.modSuspension + 1
 	vehProps.modTransmission = vehProps.modTransmission + 1
 	
-	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Ajoneuvon malli: ' ..modelName })
-	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Jarrujen taso: ' .. tostring(vehProps.modBrakes).. '/' .. GetNumVehicleMods(vehicle, 12) })
-	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Moottorin taso: ' .. tostring(vehProps.modEngine).. '/' .. GetNumVehicleMods(vehicle,11) })
-	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Armorin taso: ' .. tostring(vehProps.modArmor).. '/' .. GetNumVehicleMods(vehicle, 16) })
-	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Jousituksen taso: ' .. tostring(vehProps.modSuspension).. '/' .. GetNumVehicleMods(vehicle,15)})
-	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Vaihteiston taso: ' .. tostring(vehProps.modTransmission).. '/' .. GetNumVehicleMods(vehicle,13)})
+	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Car model: ' ..modelName })
+	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Brakes level: ' .. tostring(vehProps.modBrakes).. '/' .. GetNumVehicleMods(vehicle, 12) })
+	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Engine level: ' .. tostring(vehProps.modEngine).. '/' .. GetNumVehicleMods(vehicle,11) })
+	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Armor level: ' .. tostring(vehProps.modArmor).. '/' .. GetNumVehicleMods(vehicle, 16) })
+	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Suspension level: ' .. tostring(vehProps.modSuspension).. '/' .. GetNumVehicleMods(vehicle,15)})
+	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Transmission level: ' .. tostring(vehProps.modTransmission).. '/' .. GetNumVehicleMods(vehicle,13)})
 	TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', length = 30000, text = 'Turbo: ' .. tostring(vehProps.modTurbo)})
 		
 end)
